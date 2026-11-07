@@ -2,7 +2,7 @@
 
 window.onload = function() {
 
-    var footer = document.querySelector("footer");
+    var footer = document.getElementById("home-footer");
 
     if (footer) {
 
