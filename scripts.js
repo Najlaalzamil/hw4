@@ -10,11 +10,18 @@ window.onload = function() {
 
         var currentDate = new Date();
 
-        var message = document.createTextNode(
-            "Page loaded on: " + currentDate
-        );
+        var formattedDate = currentDate.toLocaleString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+        });
 
-        newParagraph.appendChild(message);
+        newParagraph.textContent = "Page loaded: " + formattedDate;
+
+        newParagraph.className = "page-load-time";
 
         footer.appendChild(newParagraph);
     }
