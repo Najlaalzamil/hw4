@@ -24,6 +24,7 @@
 
     <main>
 
+        <!-- Project 1 -->
         <article class="project-card">
             <h2>Restaurant Management System</h2>
 
@@ -38,10 +39,15 @@
                 </figcaption>
             </figure>
 
-            <p>
+            <p id="restaurant-description">
                 Desktop application to manage restaurant orders, billing,
                 and inventory. Applied CRUD operations and modular structure.
             </p>
+
+            <button type="button"
+                onclick="toggleDescription('restaurant-description')">
+                Show / Hide Description
+            </button>
 
             <p>
                 Project Date:
@@ -49,6 +55,8 @@
             </p>
         </article>
 
+
+        <!-- Project 2 -->
         <article class="project-card">
             <h2>RentHub (Rental Services App)</h2>
 
@@ -63,11 +71,16 @@
                 </figcaption>
             </figure>
 
-            <p>
+            <p id="renthub-description">
                 A comprehensive mobile platform providing a convenient and
                 secure way for users to rent clothes, furniture, and
                 electronic devices for flexible periods.
             </p>
+
+            <button type="button"
+                onclick="toggleDescription('renthub-description')">
+                Show / Hide Description
+            </button>
 
             <p>
                 Project Date:
@@ -76,12 +89,14 @@
 
             <p>
                 <a href="RentHub.pdf" target="_blank"
-                   rel="noopener noreferrer">
+                    rel="noopener noreferrer">
                     View Project PDF
                 </a>
             </p>
         </article>
 
+
+        <!-- Project 3 -->
         <article class="project-card">
             <h2>Custom AI Chatbot</h2>
 
@@ -96,16 +111,22 @@
                 </figcaption>
             </figure>
 
-            <p>
+            <p id="chatbot-description">
                 An AI chatbot trained on specific data to provide fast
                 and highly accurate answers in a specific field.
             </p>
+
+            <button type="button"
+                onclick="toggleDescription('chatbot-description')">
+                Show / Hide Description
+            </button>
 
             <p>
                 Project Date:
                 <time datetime="2025">2025</time>
             </p>
         </article>
+
 
         <p class="back-to-top">
             <a href="#top">Back to Top</a>
@@ -116,6 +137,8 @@
     <footer>
         <p>&copy; 2026 Najla's Website</p>
     </footer>
+
+    <script src="scripts.js"></script>
 
 </body>
 </html>
